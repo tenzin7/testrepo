@@ -3,3 +3,6 @@ banana
 grape
 orange
 mango
+dragonfruite
+pineapple
+guava
