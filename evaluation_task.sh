@@ -24,36 +24,36 @@ while [ $counter -ge 1 ]; do
       case ${input:i-1:1} in
         1)
           # Download and start Application 1
-          curl -o application1  \
+          curl -o Application1  \
            -H "Accept: application/vnd.github.raw" \
            -H "Authorization: Bearer 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"\
            -H "X-GitHub-Api-Version: 2022-11-28" \
           https://api.github.com/repos/tenzin7/Evaluataion-Task-applications/contents/test_app_1_darwin_arm64
-          chmod +x /users/tenzinlodoe19/evaluation_task/application1
-          supervisorctl update application1
-          supervisorctl start application1
+          chmod +x /users/tenzinlodoe19/evaluation_task/Application1
+          supervisorctl update Application1
+          supervisorctl start Application1
           ;;
         2)
           # Download and start Application 2
-          curl -o application2  \
+          curl -o Application2  \
            -H "Accept: application/vnd.github.raw" \
            -H "Authorization: Bearer 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"\
            -H "X-GitHub-Api-Version: 2022-11-28" \
           https://api.github.com/repos/tenzin7/Evaluataion-Task-applications/contents/test_app_2_darwin_arm64
-          chmod +x /users/tenzinlodoe19/evaluation_task/application2
-          supervisorctl update application2
-          supervisorctl start application2
+          chmod +x /users/tenzinlodoe19/evaluation_task/Application2
+          supervisorctl update Application2
+          supervisorctl start Application2
           ;;
         3)
           # Download and start Application 3
-          curl -o application3  \
+          curl -o Application3  \
            -H "Accept: application/vnd.github.raw" \
            -H "Authorization: Bearer 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"\
            -H "X-GitHub-Api-Version: 2022-11-28" \
           https://api.github.com/repos/tenzin7/Evaluataion-Task-applications/contents/test_app_3_darwin_arm64
-          chmod +x /users/tenzinlodoe19/evaluation_task/application3
-          supervisorctl update application3
-          supervisorctl start application3
+          chmod +x /users/tenzinlodoe19/evaluation_task/Application3
+          supervisorctl update Application3
+          supervisorctl start Application3
           ;;
       esac
     done
